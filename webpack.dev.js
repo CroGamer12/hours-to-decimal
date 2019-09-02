@@ -1,10 +1,17 @@
 const path = require("path");
-const common = require("./webpack.common");
-const merge = require("webpack-merge");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-module.exports = merge(common, {
+module.exports = {
+    entry: './client/index.js',
+    module: {
+        rules: [
+            {
+                test: /\.html$/,
+                use: ["html-loader"]
+            }
+        ]
+    },
     mode: "development",
     output: {
         filename: "[name].bundle.js",
@@ -62,4 +69,4 @@ module.exports = merge(common, {
     watchOptions: {
         ignored: ['node_modules']
     }
-});
+};

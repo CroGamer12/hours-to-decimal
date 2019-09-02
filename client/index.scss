@@ -39,3 +39,16 @@ body {
 .calculateBtn {
   margin: 0.25rem 0;
 }
+
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #191919;
+  color: #fff;
+  padding-left: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 26px;
+}
