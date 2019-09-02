@@ -1,7 +1,7 @@
 {
   "name": "hours-to-deciamals",
   "version": "1.0.0",
-  "description": "Converts hours to decimals and decimals to hours",
+  "description": "Converts hours to decimals, minutes and seconds",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
